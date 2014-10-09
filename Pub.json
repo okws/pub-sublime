@@ -5,6 +5,7 @@
 	"fileTypes": [
 		"pub",
 		"lib",
+		"dict",
 		"html"
 	],
 
