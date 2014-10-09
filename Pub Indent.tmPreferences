@@ -8,23 +8,12 @@
 	<string>pub.embedded.html</string>
 	<key>settings</key>
 	<dict>
-		
-		<!-- <key>decreaseIndentPattern</key>
-		<string>^(.*\*/)?\s*\}.*$</string> -->
-		<!-- <key>increaseIndentPattern</key>
-		<string>^.*\{[^}"']*$</string> -->
-		
+
 		<key>increaseIndentPattern</key>
 		<string>^.*\{[^}\"']*$</string>
-		
+
 		<key>decreaseIndentPattern</key>
 		<string>^(.*\*/)?\s*\}[;\s]*$</string>
-
-		<!-- <key>bracketIndentNextLinePattern</key>
-		<string>(?x)
-		^ \s* \b(if|while|else)\b [^;]* $
-		| ^ \s* \b(for)\b .* $
-		</string> -->
 
 	</dict>
 	<key>uuid</key>
