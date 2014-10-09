@@ -1,0 +1,53 @@
+// [PackageDev] target_format: plist, ext: tmLanguage
+{
+	"name": "Pub",
+	"scopeName": "text.html.pub",
+	"fileTypes": [
+		"pub",
+		"lib",
+		"html"
+	],
+
+	"foldingStartMarker": "(?x)\r\n\t\t(<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\\b.*?>\r\n\t\t|<!--(?!.*-->)\r\n\t\t|\\{\\s*($|\\?>\\s*$|//|/\\*(.*\\*/\\s*$|(?!.*?\\*/)))\r\n\t\t)",
+	"foldingStopMarker": "(?x)\r\n\t\t(</(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)>\r\n\t\t|^\\s*-->\r\n\t\t|(^|\\s)\\}\r\n\t\t)",
+
+
+	"patterns": [
+		{
+			"begin": "{%=?|}}",
+			"captures": {
+				"0": {
+					"name": "punctuation.section.embedded.pub"
+				}
+			},
+			"end": "%}|{{",
+			"name": "source.pub.embedded.html",
+			"patterns": [
+				{
+					"include": "source.pub"
+				}
+			]
+		},
+		{
+			"begin": "%{",
+			"end": "}",
+			"name": "source.pub.embedded.html",
+			"patterns": [
+				{
+					"include": "source.pub"
+				}
+			]
+		},
+		{
+			"begin": "\\[\\[\\[",
+			"end": "\\]\\]\\]",
+			"name": "comment"
+		},
+		{
+			"include": "text.html.basic"
+		}
+	],
+
+
+	"uuid": "C50669E1-1DCE-44E4-BE12-57CEBEAD842A"
+}

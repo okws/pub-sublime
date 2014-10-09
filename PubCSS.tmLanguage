@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>comment</key>
@@ -7,6 +7,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>css</string>
+		<string>scss</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
@@ -365,55 +366,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>pub</key>
-		<dict>
-			<key>begin</key>
-			<string>{%=?|}}</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.embedded.pub</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>%}|{{</string>
-			<key>name</key>
-			<string>source.pub.embedded</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.pub</string>
-				</dict>
-			</array>
-		</dict>
-		<key>pubvar</key>
-		<dict>
-			<key>begin</key>
-			<string>%{</string>
-			<key>end</key>
-			<string>}</string>
-			<key>name</key>
-			<string>source.pub.embedded</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.pub</string>
-				</dict>
-			</array>
-		</dict>
-		<key>pubcomment</key>
-		<dict>
-			<key>begin</key>
-			<string>\[\[\[</string>
-			<key>end</key>
-			<string>\]\]\]</string>
-			<key>name</key>
-			<string>comment</string>
-		</dict>
 		<key>comment-block</key>
 		<dict>
 			<key>begin</key>
@@ -719,6 +671,55 @@
 					<string>\!\s*important</string>
 					<key>name</key>
 					<string>keyword.other.important.css</string>
+				</dict>
+			</array>
+		</dict>
+		<key>pub</key>
+		<dict>
+			<key>begin</key>
+			<string>{%=?|}}</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.pub</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>%}|{{</string>
+			<key>name</key>
+			<string>source.pub.embedded</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.pub</string>
+				</dict>
+			</array>
+		</dict>
+		<key>pubcomment</key>
+		<dict>
+			<key>begin</key>
+			<string>\[\[\[</string>
+			<key>end</key>
+			<string>\]\]\]</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<key>pubvar</key>
+		<dict>
+			<key>begin</key>
+			<string>%{</string>
+			<key>end</key>
+			<string>}</string>
+			<key>name</key>
+			<string>source.pub.embedded</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.pub</string>
 				</dict>
 			</array>
 		</dict>
