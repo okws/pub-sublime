@@ -1,10 +1,17 @@
 ##Installation
 
-Download and add the package to your Packages folder or just clone it there.
+Clone this git repo in Sublime Text's `Packages` directory.
+
+### Mac OS X
 
 ```
-cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-git clone git://github.com/morleyzhi/pubsyntax.git
+~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+```
+
+### Windows
+
+```
+%APPDATA%/Sublime Text 2/Packages/
 ```
 
 ##Screenshots
