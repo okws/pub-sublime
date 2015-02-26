@@ -84,7 +84,7 @@
 		{ "trigger": "localtime_raw", "contents": "localtime_raw(${1})" },
 		{ "trigger": "log", "contents": "log(${1})" },
 		{ "trigger": "logwarn\tPub Log", "contents": "logwarn(${1:\"*************\"});" },
-		{ "trigger": "logv\tVerbose Log", "contents": "logwarn(\"Logging: ${1:variable} -\");\nlogwarn(${1:variable});" },
+		{ "trigger": "logv\tVerbose Log", "contents": "logwarn(\"Logging: ${1:variable} -\");\nlogwarn(${1:variable});\nlogwarn(\"End Logging\");" },
 		{ "trigger": "lookup", "contents": "lookup(${1})" },
 		{ "trigger": "map", "contents": "map(${1})" },
 		{ "trigger": "match", "contents": "match(${1})" },
